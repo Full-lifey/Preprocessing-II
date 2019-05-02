@@ -29,11 +29,22 @@
         border-radius: 10px;
       }
     }
+    @media @mobile {
+      flex-direction: column;
+      .text-content {
+        width: 95%;
+      }
+      .img-content {
+        width: 100%;
+        margin: 0;
+      }
+    }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
 
     .text-content {
       padding-left: 1%;
@@ -44,6 +55,13 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile {
+      .img-content {
+        order: 2;
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
 
   .content-destination {
@@ -52,6 +70,9 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      width: 100%;
     }
   }
 
@@ -66,6 +87,16 @@
       margin-bottom: 30px;
       .btn {
         .buttons();
+      }
+    }
+    @media @mobile {
+      flex-direction: column;
+      .destination {
+        width: 75%;
+        margin: 20px auto;
+        .btn {
+          width: 100%;
+        }
       }
     }
   }

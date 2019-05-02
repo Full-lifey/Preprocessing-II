@@ -201,6 +201,24 @@ nav a {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  nav h1 {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -238,6 +256,18 @@ nav a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 95%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    margin: 0;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -250,12 +280,24 @@ nav a {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 2;
+    margin: 0;
+    padding: 0;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -277,4 +319,16 @@ nav a {
   line-height: 40px;
   font-size: 1.8rem;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 75%;
+    margin: 20px auto;
+  }
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }

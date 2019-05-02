@@ -9,4 +9,17 @@ nav {
     a {
         .nav();
     }
+    @media @mobile {
+        .flex(row, space-around, center);
+        flex-wrap: wrap;
+        h1 {
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+        }
+        a {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
 }
