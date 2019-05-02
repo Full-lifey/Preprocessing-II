@@ -8,7 +8,10 @@
 .nav {
     text-decoration: none;
     color: black;
-
+    &:hover {
+        background: black;
+        color: white;
+    }
 }
 .border {
     border-bottom: 2px dashed lightgrey;
@@ -24,3 +27,10 @@
     font-size: 1.8rem;
     cursor: pointer;
 }
+.animations(@ani-name, @duration) {
+    animation-name: @ani-name;
+    animation-duration: @duration;
+    animation-iteration-count: infinite;
+}
+
+    

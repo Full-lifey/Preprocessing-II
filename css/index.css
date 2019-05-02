@@ -1,6 +1,21 @@
+@keyframes pulse {
+  0% {
+    background: teal;
+  }
+  50% {
+    background: #0000cc;
+  }
+  100% {
+    background: teal;
+  }
+}
 .nav {
   text-decoration: none;
   color: black;
+}
+.nav:hover {
+  background: black;
+  color: white;
 }
 .border {
   border-bottom: 2px dashed lightgrey;
@@ -201,6 +216,10 @@ nav a {
   text-decoration: none;
   color: black;
 }
+nav a:hover {
+  background: black;
+  color: white;
+}
 @media (max-width: 500px) {
   nav {
     display: flex;
@@ -319,6 +338,11 @@ nav a {
   line-height: 40px;
   font-size: 1.8rem;
   cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 500px) {
   .home .content-pick {
